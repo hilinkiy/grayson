@@ -1,0 +1,122 @@
+@media (max-width: 1199.99px) {
+    .project{
+        background-position: end;
+    }
+    .fashion__content{  
+        flex-wrap: wrap;
+    }
+    .custom__content-cards{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 991.99px) {
+    .nav__search-input {
+        position: absolute;
+        left: 0;
+        width: 0;
+        opacity: 0;
+        transition: .5s;
+        padding: 20px;
+        border: none;
+    }
+
+    .nav__search:hover .nav__search-input {
+        opacity: 1;
+        width: 100%;
+    }   
+}
+
+@media (max-width: 767.99px) {
+    .nav {
+        position: relative;
+    }
+
+    .nav__list {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        background: white;
+        right: 0;
+        padding: 20px;
+    }
+
+    .dropdown__list {
+        left: -200px;
+    }
+
+    .nav__list-link span {
+        order: 1;
+    }
+
+    .nav__list-link img {
+        margin-left: 0;
+        margin-right: 4px;
+    }
+
+    .dropdown__menu:hover .nav__list-link>img {
+        transform: rotate(90deg);
+    }
+
+    .list__btn {
+        opacity: 1;
+        left: 87%;
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        background: #41A28E;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+        color: white;
+        top: 34%;
+    }
+    .nav__search-btn{
+        margin: 0;
+        left: 10%;
+    }
+    .nav__list {
+        opacity: 0;
+        z-index: -1;
+        transition: .4s;
+    }
+
+    .nav__menu:hover .nav__list {
+        opacity: 1;
+        z-index: 1;
+    }
+    .header__content-title{
+        font-size: 44px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 575.99px) {
+    .list__btn{
+        position: absolute;
+        left: 73%;
+        margin-right: 10px;
+    } 
+    .footer__content{
+        flex-wrap: wrap ;
+    }
+    .footer__content-col-title{
+        margin-top: 50px;
+    }
+    
+    .custom__content-title{
+        text-align: center;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .header__content-title{
+        text-align: center;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .fashion__title{
+        text-align: center;
+    }
+}
